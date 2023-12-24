@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to red Automator</h1>
+    <h3>{{message}}</h3>
+    <form action="/script1" method="post">
+        {% csrf_token %}
+        <button type="submit"> Script 1</button>
+    </form>
+    <form action="/script2" method="post">
+        {% csrf_token %}
+        <button type="submit">Script 2</button>
+    </form>
+    <form action="/login/signout" method="post">
+        {% csrf_token %}
+        <button type="submit">signout</button>
+</body>
+</html>
